@@ -256,7 +256,7 @@ def main(tau_plusx, epochnum, re,randonKF):
                                 for iii in range(outvalid.shape[0]):
                                     cos = nn.CosineSimilarity(dim=1, eps=1e-6)
                                     result = outvalid[iii].reshape(1, channel1 * 2)
-                                    distance0 = cos(result, ouut).mean()
+                                    distance0 = cos(result, ouut).mean()/ (outvalid.shape[0])
                                     flag = flag + distance0
 
                             # similarA
