@@ -1,8 +1,11 @@
-运行步骤：
+input data：
+TIF files, each TIF file has dimensions of A×B, with a total of 25 files in this paper.
+
+Execution Steps:
 1.Contrastive network.py
-2.整理数据得出距离最近最远的模型参数
-3.output image of Contrastive_network.py（输出相似性图片）
-4.3guiyihua.py(max-min归一化)
-5.Pu-baggingDT.py
-6.AUCHE.Py（平均操作：对比学习模型的最近最远的两个结果）
-7.Precision_evaluation.py（平均操作：Pu-baggingDT及AUCHE.Py的结果，并进行精度评价）
+2.Organize the data to obtain the model parameters with the closest and farthest distances.
+3.output image of Contrastive_network.py
+4.3guiyihua.py(Max-min normalization)
+5.AUCHE.Py（Average the normalization results representing the closest and farthest）
+6.Pu-baggingDT.py
+7.Precision_evaluation.py（Average operation: Results from Pu-baggingDT and AUCHE.py，and precision evaluation）
